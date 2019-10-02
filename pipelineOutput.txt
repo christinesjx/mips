@@ -1,0 +1,589 @@
+
+Clock Cycle 0
+==============
+IF/ID Write (written to by the IF stage)
+----------------------------------------
+Inst = ?       IncrPC = ?
+
+IF/ID Read (read by the ID stage)
+----------------------------------------
+Control: 000000000
+
+ID/EX Write (written to by the ID stage)
+----------------------------------------
+Control: 000000000
+
+ID/EX Read (read by the EX stage)
+----------------------------------------
+Control: 000000000
+EX/MEM Write (written to by the EX stage)
+----------------------------------------
+Control: 000000000
+
+EX/MEM Read (read by the MEM stage)
+----------------------------------------
+Control: 000000000
+MEM/WB Write (written to by the MEM stage)
+----------------------------------------
+Control: 000000000
+
+MEM/WB Read (read by the WB stage)
+----------------------------------------
+Control: 000000000
+
+Register: 0  101  102  103  104  105  106  107  108  109  10a  10b  10c  10d  10e  10f  110  111  112  113  114  115  116  117  118  119  11a  11b  11c  11d  11e  11f  
+
+
+Clock Cycle 1
+==============
+IF/ID Write (written to by the IF stage)
+----------------------------------------
+Inst = 0xA1020000       IncrPC = 7A008
+
+IF/ID Read (read by the ID stage)
+----------------------------------------
+Control: 000000000
+
+ID/EX Write (written to by the ID stage)
+----------------------------------------
+Control: 000000000
+
+ID/EX Read (read by the EX stage)
+----------------------------------------
+Control: 000000000
+EX/MEM Write (written to by the EX stage)
+----------------------------------------
+Control: 000000000
+
+EX/MEM Read (read by the MEM stage)
+----------------------------------------
+Control: 000000000
+MEM/WB Write (written to by the MEM stage)
+----------------------------------------
+Control: 000000000
+
+MEM/WB Read (read by the WB stage)
+----------------------------------------
+Control: 000000000
+
+Register: 0  101  102  103  104  105  106  107  108  109  10a  10b  10c  10d  10e  10f  110  111  112  113  114  115  116  117  118  119  11a  11b  11c  11d  11e  11f  
+
+
+Clock Cycle 2
+==============
+IF/ID Write (written to by the IF stage)
+----------------------------------------
+Inst = 0x810AFFFC       IncrPC = 7A00C
+
+IF/ID Read (read by the ID stage)
+----------------------------------------
+Inst = 0xA1020000       IncrPC = 7A008
+
+
+ID/EX Write (written to by the ID stage)
+----------------------------------------
+Control: RegDst=X,  ALUSrc=1,  ALUOp=00,  MemRead=0,  MemWrite=1,  
+         Branch=0,  MemToReg=X,  RegWrite=0  
+
+Incr PC = 7A008    ReadReg1Value = 108    ReadReg2Value = 102    
+SEOffset = 0   WriteReg_20_16 = 2   WriteReg_15_11 = 0   Function = X
+
+
+ID/EX Read (read by the EX stage)
+----------------------------------------
+Control: 000000000
+EX/MEM Write (written to by the EX stage)
+----------------------------------------
+Control: 000000000
+
+EX/MEM Read (read by the MEM stage)
+----------------------------------------
+Control: 000000000
+MEM/WB Write (written to by the MEM stage)
+----------------------------------------
+Control: 000000000
+
+MEM/WB Read (read by the WB stage)
+----------------------------------------
+Control: 000000000
+
+Register: 0  101  102  103  104  105  106  107  108  109  10a  10b  10c  10d  10e  10f  110  111  112  113  114  115  116  117  118  119  11a  11b  11c  11d  11e  11f  
+
+
+Clock Cycle 3
+==============
+IF/ID Write (written to by the IF stage)
+----------------------------------------
+Inst = 0x00831820       IncrPC = 7A010
+
+IF/ID Read (read by the ID stage)
+----------------------------------------
+Inst = 0x810AFFFC       IncrPC = 7A00C
+
+
+ID/EX Write (written to by the ID stage)
+----------------------------------------
+Control: RegDst=0,  ALUSrc=1,  ALUOp=00,  MemRead=1,  MemWrite=0,  
+         Branch=0,  MemToReg=1,  RegWrite=1  
+
+Incr PC = 7A00C    ReadReg1Value = 108    ReadReg2Value = 10a    
+SEOffset = fffffffc   WriteReg_20_16 = 10   WriteReg_15_11 = 31   Function = X
+
+
+ID/EX Read (read by the EX stage)
+----------------------------------------
+Control: RegDst=X,  ALUSrc=1,  ALUOp=00,  MemRead=0,  MemWrite=1,  
+         Branch=0,  MemToReg=X,  RegWrite=0  
+
+Incr PC = 7A008    ReadReg1Value = 108    ReadReg2Value = 102    
+SEOffset = 0   WriteReg_20_16 = 2   WriteReg_15_11 = 0   Function = X
+
+EX/MEM Write (written to by the EX stage)
+----------------------------------------
+Control: MemRead=0,  MemWrite=1,  Branch=0,  MemToReg=X,  RegWrite=0  
+
+CalcBTA = X     Zero = false     ALUResult = 108
+SWValue = 102      WriteRegNum = X
+
+
+EX/MEM Read (read by the MEM stage)
+----------------------------------------
+Control: 000000000
+MEM/WB Write (written to by the MEM stage)
+----------------------------------------
+Control: 000000000
+
+MEM/WB Read (read by the WB stage)
+----------------------------------------
+Control: 000000000
+
+Register: 0  101  102  103  104  105  106  107  108  109  10a  10b  10c  10d  10e  10f  110  111  112  113  114  115  116  117  118  119  11a  11b  11c  11d  11e  11f  
+
+
+Clock Cycle 4
+==============
+IF/ID Write (written to by the IF stage)
+----------------------------------------
+Inst = 0x01263820       IncrPC = 7A014
+
+IF/ID Read (read by the ID stage)
+----------------------------------------
+Inst = 0x00831820       IncrPC = 7A010
+
+
+ID/EX Write (written to by the ID stage)
+----------------------------------------
+Control: RegDst=1,  ALUSrc=0,  ALUOp=10,  MemRead=0,  MemWrite=0,  
+         Branch=0,  MemToReg=0,  RegWrite=1  
+
+Incr PC = 7A010    ReadReg1Value = 104    ReadReg2Value = 103    
+SEOffset = X    WriteReg_20_16 = 3   WriteReg_15_11 = 3   Function = x20
+
+
+ID/EX Read (read by the EX stage)
+----------------------------------------
+Control: RegDst=0,  ALUSrc=1,  ALUOp=00,  MemRead=1,  MemWrite=0,  
+         Branch=0,  MemToReg=1,  RegWrite=1  
+
+Incr PC = 7A00C    ReadReg1Value = 108    ReadReg2Value = 10a    
+SEOffset = fffffffc   WriteReg_20_16 = 10   WriteReg_15_11 = 31   Function = X
+
+EX/MEM Write (written to by the EX stage)
+----------------------------------------
+Control: MemRead=1,  MemWrite=0,  Branch=0,  MemToReg=1,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 104
+SWValue = 10a      WriteRegNum = 10
+
+
+EX/MEM Read (read by the MEM stage)
+----------------------------------------
+Control: MemRead=0,  MemWrite=1,  Branch=0,  MemToReg=X,  RegWrite=0  
+
+CalcBTA = X     Zero = false     ALUResult = 108
+SWValue = 102      WriteRegNum = X
+
+MEM/WB Write (written to by the MEM stage)
+----------------------------------------
+Control: MemToReg=X,  RegWrite=0  
+LWDataValue = X    ALUResult = 108    WriteRegNum = X
+
+MEM/WB Read (read by the WB stage)
+----------------------------------------
+Control: 000000000
+
+Register: 0  101  102  103  104  105  106  107  108  109  10a  10b  10c  10d  10e  10f  110  111  112  113  114  115  116  117  118  119  11a  11b  11c  11d  11e  11f  
+
+
+Clock Cycle 5
+==============
+IF/ID Write (written to by the IF stage)
+----------------------------------------
+Inst = 0x01224820       IncrPC = 7A018
+
+IF/ID Read (read by the ID stage)
+----------------------------------------
+Inst = 0x01263820       IncrPC = 7A014
+
+
+ID/EX Write (written to by the ID stage)
+----------------------------------------
+Control: RegDst=1,  ALUSrc=0,  ALUOp=10,  MemRead=0,  MemWrite=0,  
+         Branch=0,  MemToReg=0,  RegWrite=1  
+
+Incr PC = 7A014    ReadReg1Value = 109    ReadReg2Value = 106    
+SEOffset = X    WriteReg_20_16 = 6   WriteReg_15_11 = 7   Function = x20
+
+
+ID/EX Read (read by the EX stage)
+----------------------------------------
+Control: RegDst=1,  ALUSrc=0,  ALUOp=10,  MemRead=0,  MemWrite=0,  
+         Branch=0,  MemToReg=0,  RegWrite=1  
+
+Incr PC = 7A010    ReadReg1Value = 104    ReadReg2Value = 103    
+SEOffset = X    WriteReg_20_16 = 3   WriteReg_15_11 = 3   Function = x20
+
+EX/MEM Write (written to by the EX stage)
+----------------------------------------
+Control: MemRead=0,  MemWrite=0,  Branch=0,  MemToReg=0,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 207
+SWValue = 103      WriteRegNum = 3
+
+
+EX/MEM Read (read by the MEM stage)
+----------------------------------------
+Control: MemRead=1,  MemWrite=0,  Branch=0,  MemToReg=1,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 104
+SWValue = 10a      WriteRegNum = 10
+
+MEM/WB Write (written to by the MEM stage)
+----------------------------------------
+Control: MemToReg=1,  RegWrite=1  
+LWDataValue = 4    ALUResult = 104    WriteRegNum = 10
+
+MEM/WB Read (read by the WB stage)
+----------------------------------------
+Control: MemToReg=X,  RegWrite=0  
+LWDataValue = X    ALUResult = 108    WriteRegNum = X
+
+Register: 0  101  102  103  104  105  106  107  108  109  10a  10b  10c  10d  10e  10f  110  111  112  113  114  115  116  117  118  119  11a  11b  11c  11d  11e  11f  
+
+
+Clock Cycle 6
+==============
+IF/ID Write (written to by the IF stage)
+----------------------------------------
+Inst = 0x81180000       IncrPC = 7A01C
+
+IF/ID Read (read by the ID stage)
+----------------------------------------
+Inst = 0x01224820       IncrPC = 7A018
+
+
+ID/EX Write (written to by the ID stage)
+----------------------------------------
+Control: RegDst=1,  ALUSrc=0,  ALUOp=10,  MemRead=0,  MemWrite=0,  
+         Branch=0,  MemToReg=0,  RegWrite=1  
+
+Incr PC = 7A018    ReadReg1Value = 109    ReadReg2Value = 102    
+SEOffset = X    WriteReg_20_16 = 2   WriteReg_15_11 = 9   Function = x20
+
+
+ID/EX Read (read by the EX stage)
+----------------------------------------
+Control: RegDst=1,  ALUSrc=0,  ALUOp=10,  MemRead=0,  MemWrite=0,  
+         Branch=0,  MemToReg=0,  RegWrite=1  
+
+Incr PC = 7A014    ReadReg1Value = 109    ReadReg2Value = 106    
+SEOffset = X    WriteReg_20_16 = 6   WriteReg_15_11 = 7   Function = x20
+
+EX/MEM Write (written to by the EX stage)
+----------------------------------------
+Control: MemRead=0,  MemWrite=0,  Branch=0,  MemToReg=0,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 20f
+SWValue = 106      WriteRegNum = 7
+
+
+EX/MEM Read (read by the MEM stage)
+----------------------------------------
+Control: MemRead=0,  MemWrite=0,  Branch=0,  MemToReg=0,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 207
+SWValue = 103      WriteRegNum = 3
+
+MEM/WB Write (written to by the MEM stage)
+----------------------------------------
+Control: MemToReg=0,  RegWrite=1  
+LWDataValue = X    ALUResult = 207    WriteRegNum = 3
+
+MEM/WB Read (read by the WB stage)
+----------------------------------------
+Control: MemToReg=1,  RegWrite=1  
+LWDataValue = 4    ALUResult = 104    WriteRegNum = 10
+
+Register: 0  101  102  103  104  105  106  107  108  109  4  10b  10c  10d  10e  10f  110  111  112  113  114  115  116  117  118  119  11a  11b  11c  11d  11e  11f  
+
+
+Clock Cycle 7
+==============
+IF/ID Write (written to by the IF stage)
+----------------------------------------
+Inst = 0x81510010       IncrPC = 7A020
+
+IF/ID Read (read by the ID stage)
+----------------------------------------
+Inst = 0x81180000       IncrPC = 7A01C
+
+
+ID/EX Write (written to by the ID stage)
+----------------------------------------
+Control: RegDst=0,  ALUSrc=1,  ALUOp=00,  MemRead=1,  MemWrite=0,  
+         Branch=0,  MemToReg=1,  RegWrite=1  
+
+Incr PC = 7A01C    ReadReg1Value = 108    ReadReg2Value = 118    
+SEOffset = 0   WriteReg_20_16 = 24   WriteReg_15_11 = 0   Function = X
+
+
+ID/EX Read (read by the EX stage)
+----------------------------------------
+Control: RegDst=1,  ALUSrc=0,  ALUOp=10,  MemRead=0,  MemWrite=0,  
+         Branch=0,  MemToReg=0,  RegWrite=1  
+
+Incr PC = 7A018    ReadReg1Value = 109    ReadReg2Value = 102    
+SEOffset = X    WriteReg_20_16 = 2   WriteReg_15_11 = 9   Function = x20
+
+EX/MEM Write (written to by the EX stage)
+----------------------------------------
+Control: MemRead=0,  MemWrite=0,  Branch=0,  MemToReg=0,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 20b
+SWValue = 102      WriteRegNum = 9
+
+
+EX/MEM Read (read by the MEM stage)
+----------------------------------------
+Control: MemRead=0,  MemWrite=0,  Branch=0,  MemToReg=0,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 20f
+SWValue = 106      WriteRegNum = 7
+
+MEM/WB Write (written to by the MEM stage)
+----------------------------------------
+Control: MemToReg=0,  RegWrite=1  
+LWDataValue = X    ALUResult = 20f    WriteRegNum = 7
+
+MEM/WB Read (read by the WB stage)
+----------------------------------------
+Control: MemToReg=0,  RegWrite=1  
+LWDataValue = X    ALUResult = 207    WriteRegNum = 3
+
+Register: 0  101  102  207  104  105  106  107  108  109  4  10b  10c  10d  10e  10f  110  111  112  113  114  115  116  117  118  119  11a  11b  11c  11d  11e  11f  
+
+
+Clock Cycle 8
+==============
+IF/ID Write (written to by the IF stage)
+----------------------------------------
+Inst = 0x00624022       IncrPC = 7A024
+
+IF/ID Read (read by the ID stage)
+----------------------------------------
+Inst = 0x81510010       IncrPC = 7A020
+
+
+ID/EX Write (written to by the ID stage)
+----------------------------------------
+Control: RegDst=0,  ALUSrc=1,  ALUOp=00,  MemRead=1,  MemWrite=0,  
+         Branch=0,  MemToReg=1,  RegWrite=1  
+
+Incr PC = 7A020    ReadReg1Value = 4    ReadReg2Value = 111    
+SEOffset = 10   WriteReg_20_16 = 17   WriteReg_15_11 = 0   Function = X
+
+
+ID/EX Read (read by the EX stage)
+----------------------------------------
+Control: RegDst=0,  ALUSrc=1,  ALUOp=00,  MemRead=1,  MemWrite=0,  
+         Branch=0,  MemToReg=1,  RegWrite=1  
+
+Incr PC = 7A01C    ReadReg1Value = 108    ReadReg2Value = 118    
+SEOffset = 0   WriteReg_20_16 = 24   WriteReg_15_11 = 0   Function = X
+
+EX/MEM Write (written to by the EX stage)
+----------------------------------------
+Control: MemRead=1,  MemWrite=0,  Branch=0,  MemToReg=1,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 108
+SWValue = 118      WriteRegNum = 24
+
+
+EX/MEM Read (read by the MEM stage)
+----------------------------------------
+Control: MemRead=0,  MemWrite=0,  Branch=0,  MemToReg=0,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 20b
+SWValue = 102      WriteRegNum = 9
+
+MEM/WB Write (written to by the MEM stage)
+----------------------------------------
+Control: MemToReg=0,  RegWrite=1  
+LWDataValue = X    ALUResult = 20b    WriteRegNum = 9
+
+MEM/WB Read (read by the WB stage)
+----------------------------------------
+Control: MemToReg=0,  RegWrite=1  
+LWDataValue = X    ALUResult = 20f    WriteRegNum = 7
+
+Register: 0  101  102  207  104  105  106  20f  108  109  4  10b  10c  10d  10e  10f  110  111  112  113  114  115  116  117  118  119  11a  11b  11c  11d  11e  11f  
+
+
+Clock Cycle 9
+==============
+IF/ID Write (written to by the IF stage)
+----------------------------------------
+Inst = ?       IncrPC = ?
+
+IF/ID Read (read by the ID stage)
+----------------------------------------
+Inst = 0x00624022       IncrPC = 7A024
+
+
+ID/EX Write (written to by the ID stage)
+----------------------------------------
+Control: RegDst=1,  ALUSrc=0,  ALUOp=10,  MemRead=0,  MemWrite=0,  
+         Branch=0,  MemToReg=0,  RegWrite=1  
+
+Incr PC = 7A024    ReadReg1Value = 207    ReadReg2Value = 102    
+SEOffset = X    WriteReg_20_16 = 2   WriteReg_15_11 = 8   Function = x22
+
+
+ID/EX Read (read by the EX stage)
+----------------------------------------
+Control: RegDst=0,  ALUSrc=1,  ALUOp=00,  MemRead=1,  MemWrite=0,  
+         Branch=0,  MemToReg=1,  RegWrite=1  
+
+Incr PC = 7A020    ReadReg1Value = 4    ReadReg2Value = 111    
+SEOffset = 10   WriteReg_20_16 = 17   WriteReg_15_11 = 0   Function = X
+
+EX/MEM Write (written to by the EX stage)
+----------------------------------------
+Control: MemRead=1,  MemWrite=0,  Branch=0,  MemToReg=1,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 14
+SWValue = 111      WriteRegNum = 17
+
+
+EX/MEM Read (read by the MEM stage)
+----------------------------------------
+Control: MemRead=1,  MemWrite=0,  Branch=0,  MemToReg=1,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 108
+SWValue = 118      WriteRegNum = 24
+
+MEM/WB Write (written to by the MEM stage)
+----------------------------------------
+Control: MemToReg=1,  RegWrite=1  
+LWDataValue = 102    ALUResult = 108    WriteRegNum = 24
+
+MEM/WB Read (read by the WB stage)
+----------------------------------------
+Control: MemToReg=0,  RegWrite=1  
+LWDataValue = X    ALUResult = 20b    WriteRegNum = 9
+
+Register: 0  101  102  207  104  105  106  20f  108  20b  4  10b  10c  10d  10e  10f  110  111  112  113  114  115  116  117  118  119  11a  11b  11c  11d  11e  11f  
+
+
+Clock Cycle 10
+==============
+IF/ID Write (written to by the IF stage)
+----------------------------------------
+Inst = ?       IncrPC = ?
+
+IF/ID Read (read by the ID stage)
+----------------------------------------
+Control: 000000000
+
+ID/EX Write (written to by the ID stage)
+----------------------------------------
+Control: 000000000
+
+ID/EX Read (read by the EX stage)
+----------------------------------------
+Control: RegDst=1,  ALUSrc=0,  ALUOp=10,  MemRead=0,  MemWrite=0,  
+         Branch=0,  MemToReg=0,  RegWrite=1  
+
+Incr PC = 7A024    ReadReg1Value = 207    ReadReg2Value = 102    
+SEOffset = X    WriteReg_20_16 = 2   WriteReg_15_11 = 8   Function = x22
+
+EX/MEM Write (written to by the EX stage)
+----------------------------------------
+Control: MemRead=0,  MemWrite=0,  Branch=0,  MemToReg=0,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 105
+SWValue = 102      WriteRegNum = 8
+
+
+EX/MEM Read (read by the MEM stage)
+----------------------------------------
+Control: MemRead=1,  MemWrite=0,  Branch=0,  MemToReg=1,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 14
+SWValue = 111      WriteRegNum = 17
+
+MEM/WB Write (written to by the MEM stage)
+----------------------------------------
+Control: MemToReg=1,  RegWrite=1  
+LWDataValue = 14    ALUResult = 14    WriteRegNum = 17
+
+MEM/WB Read (read by the WB stage)
+----------------------------------------
+Control: MemToReg=1,  RegWrite=1  
+LWDataValue = 102    ALUResult = 108    WriteRegNum = 24
+
+Register: 0  101  102  207  104  105  106  20f  108  20b  4  10b  10c  10d  10e  10f  110  111  112  113  114  115  116  117  102  119  11a  11b  11c  11d  11e  11f  
+
+
+Clock Cycle 11
+==============
+IF/ID Write (written to by the IF stage)
+----------------------------------------
+Inst = ?       IncrPC = ?
+
+IF/ID Read (read by the ID stage)
+----------------------------------------
+Control: 000000000
+
+ID/EX Write (written to by the ID stage)
+----------------------------------------
+Control: 000000000
+
+ID/EX Read (read by the EX stage)
+----------------------------------------
+Control: 000000000
+EX/MEM Write (written to by the EX stage)
+----------------------------------------
+Control: 000000000
+
+EX/MEM Read (read by the MEM stage)
+----------------------------------------
+Control: MemRead=0,  MemWrite=0,  Branch=0,  MemToReg=0,  RegWrite=1  
+
+CalcBTA = X     Zero = false     ALUResult = 105
+SWValue = 102      WriteRegNum = 8
+
+MEM/WB Write (written to by the MEM stage)
+----------------------------------------
+Control: MemToReg=0,  RegWrite=1  
+LWDataValue = X    ALUResult = 105    WriteRegNum = 8
+
+MEM/WB Read (read by the WB stage)
+----------------------------------------
+Control: MemToReg=1,  RegWrite=1  
+LWDataValue = 14    ALUResult = 14    WriteRegNum = 17
+
+Register: 0  101  102  207  104  105  106  20f  108  20b  4  10b  10c  10d  10e  10f  110  14  112  113  114  115  116  117  102  119  11a  11b  11c  11d  11e  11f  
+
+
+Process finished with exit code 0
